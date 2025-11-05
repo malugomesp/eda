@@ -13,7 +13,7 @@ github = "https://github.com/joaoarthurbm/eda-implementacoes/blob/master/java/sr
 
 # A estratégia de Hoare pra particionar
 
-Vamos particionar o array $[3, 8, 7, 10, 0, 23, 2, 1, 77, 7]$. 
+Vamos particionar o array $[3, 1, 2, 3, 10, 23, 2, 1, 77, 7]$. 
 
 Vamos aqui também trabalhar com o pivot na primeira posição, isto é, `pivot = v[ini]`. A ideia do particionamento de Hoare é usar dois índices para percorrer o array. O primeiro índice, `i`, parte da posição à frente do pivot, isto é, `ini + 1` e percorre o array do início para o fim. O segundo índice,  `j`, parte da última posição e percorre o array do fim para o início. Sempre que encontrar um elemento v[i] maior do que o pivot, o `i` pára. De forma análoga, sempre que encontrar um elemento v[j] menor do que o pivot, o `j` pára. Depois dessa primeira iteração, se i < j, troca-se v[i] por v[j] e repete-se esse processo. Complicado? Assim escrito é um pouco, né? Vamos para o exemplo:
 
